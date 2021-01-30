@@ -15,7 +15,7 @@ void bubble_sort(int *array, size_t size)
 		return;
 	n = size;
 	/* (x < n is also valid), but loop will repeat one time more than needed. */
-	for (x = 0; x < n; x++)
+	for (x = 0; x < n - 1; x++)
 	{
 		/* As bigger element always ends in the final place, we skip x iterations */
 		for (y = 0; y < n - 1 - x; y++)
