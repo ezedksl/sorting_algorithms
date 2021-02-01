@@ -2,18 +2,17 @@
 
 /**
  * selection_sort - Sorts an array in ascending order (Selection Sort)
- * @array: Array to be sor
+ * @array: Array to be sorted
  * @size: Size of the array
  */
 
 void selection_sort(int *array, size_t size)
 {
-	size_t a = 0, b = 0;
-	int smaller = 0, point = 0;
+	size_t a, b;
+	int smaller, point = 0;
 
-	b = 1;
-	smaller = array[0];
-
+	if ((!array) || size <= 0)
+		return;
 	for(a = 0; a < size - 1; a++)
 	{
 		smaller = array[a];
