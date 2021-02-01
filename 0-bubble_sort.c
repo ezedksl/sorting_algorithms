@@ -20,7 +20,7 @@ void bubble_sort(int *array, size_t size)
 		/* As bigger element always ends in the final place, we skip x iterations */
 		for (y = 0; y < n - 1 - x; y++)
 		{
-			/* If next number is bigger, swap behind */
+			/* If next number is smaller, swap behind */
 			if (array[y] > array[y + 1])
 			{
 				swap = array[y];
